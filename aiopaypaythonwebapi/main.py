@@ -182,9 +182,9 @@ class PayPayWebAPI:
             icon: str
             raw: dict
 
-        name = profile["payload"]["userProfile"]["nickName"]
-        external_user_id = profile["payload"]["userProfile"]["externalUserId"]
-        icon = profile["payload"]["userProfile"]["avatarImageUrl"]
+        name = profile["payload"]["display_name"]
+        external_user_id = profile["payload"]["external_id"]
+        icon = profile["payload"]["photo_url"]
 
         return GetProfile(name, external_user_id, icon, profile)
 
