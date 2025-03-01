@@ -33,7 +33,7 @@ class PayPayWebAPI:
         self,
         phone: str = None,
         password: str = None,
-        client_uuid: str = str(uuid4()).upper(),
+        client_uuid: str = str(uuid4()),
         access_token: str = None,
     ):
         self.client_uuid = client_uuid
