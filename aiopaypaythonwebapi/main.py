@@ -63,7 +63,7 @@ class PayPayWebAPI:
                 self.access_token = login.json()["access_token"]
             except:
                 try:
-                    if login.json()["response_type"] != "SUCCESS":
+                    if login.json()["result_code"] != "SUCCESS":
                         raise PayPayWebAPILoginError(login.json())
                     else:
                         self.otp_prefix = login.json()["otp_prefix"]
