@@ -5,5 +5,5 @@ from .main import (
     PayPayWebAPINetWorkError,
 )
 
-__version__ = "3.0.1"
+__version__ = "3.0.2"
 __url__ = "https://github.com/nennneko5787/PayPaython-WebAPI"
